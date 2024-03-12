@@ -1,0 +1,28 @@
+Devin Bailey
+10/29/23
+
+This program simulates a basic car rental system where customers can check available cars, rent vehicles, return them, and receive invoices based on their rental duration and the number of cars rented. The program is written in Python and uses object-oriented programming principles to organize and manage the data related to car rentals and customers.
+
+1. Import Statements:
+   - The code begins with importing classes from a file named ‘CarRentalClasses’.
+
+2. ‘main’ Function:
+   - Initializes several variables, including a ‘CarRental’ object for managing available cars, a dictionary to store customer information, and a customer ID counter to ensure customers with the same name will not confuse the program.
+   - Displays a menu to the user, allowing them to choose various options related to renting and returning vehicles.
+
+3. Menu Options:
+   - The menu options include:
+     - Display Vehicles Currently in Stock: Shows the number of vehicles available for rent.
+     - Rent a Vehicle: Allows a customer to rent one or more vehicles. It asks for the customer's name, assigns them a unique customer ID, and records their rental details.
+     - Return a Vehicle: Allows a customer to return a vehicle by providing their customer ID. It calculates the rental cost and updates the available stock.
+     - Exit: Exits the program.
+
+4. Customer Interaction:
+   - When a customer rents a vehicle, the program records the rental start time, rental type (hourly, daily, or weekly), and the number of vehicles they want to rent.
+   - It checks if there are enough vehicles in stock and provides a unique customer ID for future reference.
+   - When a customer returns a vehicle, it calculates the cost based on the rental type and time elapsed. It then updates the available stock and displays an invoice.
+
+5. CarRental and Customer Classes:
+   - The code defines two classes: ‘CarRental’ and ‘Customer’.
+   - ‘CarRental’ class stores information about available cars and rental prices for different durations.
+   - ‘Customer’ class stores customer details such as username, customer ID, rental start time, rental type, and the number of cars rented. It also contains methods to rent and return cars.
